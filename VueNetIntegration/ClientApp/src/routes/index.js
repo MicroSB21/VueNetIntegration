@@ -1,4 +1,5 @@
 ﻿import { createRouter, createWebHistory } from "vue-router";
+import taskRouter from '../modules/Tasks/router'
 
 const routes = [
     {
@@ -10,6 +11,10 @@ const routes = [
         path: "/about",
         name: "about",
         component: () => import("../Pages/About.vue")
+    },
+    {
+        path: "/tasks",
+        ...taskRouter
     }
 ]
 

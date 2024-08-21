@@ -11,6 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\data\" />
+    <Folder Include="ClientApp\src\composables\" />
+    <Folder Include="ClientApp\src\modules\Tasks\components\" />
+    <Folder Include="ClientApp\src\modules\Tasks\composables\" />
+    <Folder Include="ClientApp\src\modules\Tasks\layout\" />
+    <Folder Include="ClientApp\src\modules\Tasks\views\" />
     <Folder Include="ClientApp\src\Pages\" />
   </ItemGroup>
 
