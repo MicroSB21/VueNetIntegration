@@ -123,7 +123,7 @@ form {
 
 /* loading state */
 .loading {
-    max-width: 640px;
+    max-width: 100wh;
     border: 1px solid #ffd859;
     background: #ffe9a0;
     color: #3a3a3a;

@@ -13,6 +13,23 @@ const routes = [
         component: () => import("../Pages/About.vue")
     },
     {
+        path: "/recipes",
+        name: "recipes",
+        component: () => import("../Pages/Recipes.vue"),
+        children:[
+            {
+                path: "",
+                name: "ListRecipes",
+                component: () => import("../Pages/ListRecipes.vue")
+            },
+            {
+                path: "/recipeDetail/:id",
+                name: "recipeDetail",
+                component: () => import("../Pages/RecipeDetail.vue")
+            }
+        ]
+    },
+    {
         path: "/tasks",
         ...taskRouter
     }
